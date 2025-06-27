@@ -114,3 +114,83 @@ body {
 .cta-button:hover {
   background-color: #e65c2f;
 }
+
+<section class="about" id="about">
+  <h2>About Infraflow</h2>
+  <p>Infraflow is a modern heated yoga and workout studio that blends strength and serenity. With two custom rooms — one for high-energy infrared workouts and another for calming hot yoga — we help you build balance from the inside out.</p>
+</section>
+
+<!-- Classes Section -->
+<section class="classes" id="classes">
+  <h2>Our Classes</h2>
+  <div class="class-grid">
+    <div class="class-card">
+      <h3>InfraHIIT</h3>
+      <p>High-intensity heated workouts designed to energize and sculpt your body.</p>
+    </div>
+    <div class="class-card">
+      <h3>InfraSculpt</h3>
+      <p>Strength-focused flows that build core and muscular endurance in the heat.</p>
+    </div>
+    <div class="class-card">
+      <h3>InfraZen</h3>
+      <p>Deep stretching and mindful movement in a warm, tranquil environment.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>We’d love to hear from you. Reach out with questions or to book your first class.</p>
+  <ul>
+    <li>Email: <a href="mailto:hello@infraflowstudio.com">hello@infraflowstudio.com</a></li>
+    <li>Instagram: <a href="#">@infraflowstudio</a></li>
+    <li>Location: Your City, USA</li>
+  </ul>
+</section>
+🎨 Add to your style.css for styling:
+css
+Copy code
+section {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ff6e40;
+}
+
+section p, section li {
+  font-size: 1.1rem;
+  color: #ddd;
+  max-width: 700px;
+  margin: 0 auto 1rem auto;
+}
+
+.class-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.class-card {
+  background: #222;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.class-card:hover {
+  transform: scale(1.05);
+}
+
+.class-card h3 {
+  color: #ff6e40;
+  margin-bottom: 1rem;
+}
