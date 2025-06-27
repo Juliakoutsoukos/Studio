@@ -236,3 +236,58 @@ section p, section li {
   color: #6e8b63;
   margin-bottom: 1rem;
 }
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About Infraflow</h2>
+      <p>Infraflow is more than a studio — it's a sanctuary. We bring warmth, strength, and serenity together in two signature spaces: one for high-energy heated workouts, and one for zen-infused yoga. Our goal is to help you reconnect to your body through movement and heat.</p>
+      <p>Founded with the belief that balance is built — not found — Infraflow creates a welcoming space for all bodies and all journeys.</p>
+    </div>
+    <div class="about-image">
+      <img src="studio-about.jpg" alt="Infraflow Studio Interior">
+    </div>
+  </div>
+</section>
+✅ Add this to style.css:
+css
+Copy code
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.about-text {
+  flex: 1 1 400px;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #6e8b63;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #3d2e28;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.about-image {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
